@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Bhen 🎉</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center px-4">
+  <div class="bg-white shadow-2xl rounded-2xl p-6 sm:p-8 max-w-md w-full text-center">
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-pink-500 mb-4">🎂 Happy Birthday Meri Pyaari Bhen 🎂</h1>
+    <p class="text-base sm:text-lg text-gray-700 mb-6">
+     HAPPIEE BIRTHDAY MERII PYARI BACCHII😭💋🎀 wuhuhuhuhuhu yeyeyeyeyyeey 12 bj gyeee meri bhn ka janam ho gya I love you the most Meri pyari Behan always be happy bhai kaise btau kitni pyari h tu aaise hi hamesha mere SATH rahiyo🫠🫶🏻 like seriously itna Sara time humne sath nikal liyaaa Bhai time kita jaldi jaldi nikl raha h but hamari dosti hamara pyar hamara behenchara or strong hota ja raha h din ba din 🧿
+Bhaiii I can't love anyone the way I loved you... you'll always be my special onee, mieee priv homiee , meri suar ki tatti🥺🫦
+THANKUUUUU SO MUCHH MERII BHEANN merko hamesha smjhne k liye bina bole... hamesha mere sath rehne k liyee m terko kisi k sath share nhi kr sktiii.....tu bs meri hai or meri hi rahegi hamesha 😭🎀
+And I bet no one could ever think of loving you the way I do..
+Terko m kitna pyar krti hu kbhi words m explain nhi kr paungi likee 7 janam m shyd thoda bta pau ki kitna pyar krti hu😭tu duniya ki sari khushiyan deserve krti h my loveee 😭💋🎀
+    </p>
+
+    <div class="text-5xl sm:text-6xl mb-6">🎉🎈🎁</div>
+
+    <p class="text-gray-600 italic text-sm sm:text-base">
+      "You are in my heart You shall be in there forever 🥹🫶🩷🎀💋🧿"
+    </p>
+
+    <button onclick="celebrate()" class="mt-6 px-6 py-3 bg-pink-500 text-white rounded-xl shadow hover:bg-pink-600 transition w-full sm:w-auto">
+      Click for a Surprise 🎊
+    </button>
+
+    <p id="surprise" class="mt-4 text-lg sm:text-xl font-semibold text-purple-600 hidden">
+      You are amazing, you are important, you are the best, You are special, You are unique, You are my Soul Twin, You are my Guuu and you are precious to me ! Have the best birthday ever babe 😘🩷🫶🌷💌
+    </p>
+  </div>
+
+  <script>
+    function celebrate() {
+      document.getElementById('surprise').classList.remove('hidden');
+
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+
+      setTimeout(() => {
+        confetti({ particleCount: 100, spread: 120, origin: { x: 0.1 } });
+        confetti({ particleCount: 100, spread: 120, origin: { x: 0.9 } });
+      }, 300);
+    }
+  </script>
+</body>
+</html>
